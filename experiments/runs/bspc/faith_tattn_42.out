@@ -1,0 +1,28 @@
+0.1 [{'strategy': 'high', 'fraction': 0.1, 'macro_f1': 0.5782714125294106, 'macro_auc': 0.868318943279807, 'accuracy': 0.7145454545454546}, {'strategy': 'low', 'fraction': 0.1, 'macro_f1': 0.4966794815294593, 'macro_auc': 0.8251645203121736, 'accuracy': 0.6078787878787879}, {'strategy': 'random', 'fraction': 0.1, 'macro_f1': 0.5860996919517151, 'macro_f1_sd': 0.0038148018702133363, 'macro_auc': 0.868552617124097, 'macro_auc_sd': 0.0020712336901046098, 'accuracy': 0.7264646464646466, 'repeats': 3}]
+0.2 [{'strategy': 'high', 'fraction': 0.2, 'macro_f1': 0.5573069264299912, 'macro_auc': 0.8579581199129886, 'accuracy': 0.6854545454545454}, {'strategy': 'low', 'fraction': 0.2, 'macro_f1': 0.3904640234626671, 'macro_auc': 0.784788043147784, 'accuracy': 0.4672727272727273}, {'strategy': 'random', 'fraction': 0.2, 'macro_f1': 0.5601986801987044, 'macro_f1_sd': 0.006147317704303474, 'macro_auc': 0.8591814780350194, 'macro_auc_sd': 0.0028057125173478613, 'accuracy': 0.7028282828282828, 'repeats': 3}]
+0.3 [{'strategy': 'high', 'fraction': 0.3, 'macro_f1': 0.5252835063438164, 'macro_auc': 0.8449836696564841, 'accuracy': 0.6472727272727272}, {'strategy': 'low', 'fraction': 0.3, 'macro_f1': 0.3109531127004875, 'macro_auc': 0.7508017445121346, 'accuracy': 0.37575757575757573}, {'strategy': 'random', 'fraction': 0.3, 'macro_f1': 0.5181450598119989, 'macro_f1_sd': 0.0037597822146241047, 'macro_auc': 0.8440429170816602, 'macro_auc_sd': 0.003634789104073389, 'accuracy': 0.667878787878788, 'repeats': 3}]
+{
+  "concentration": {
+    "mean": 0.001442858949303627,
+    "sd": 0.0015949733788147569,
+    "min": 9.894371032714844e-06,
+    "max": 0.014326035976409912,
+    "per_class_mean": {
+      "NORM": 0.001338078291155398,
+      "MI": 0.0018362682312726974,
+      "STTC": 0.001673786318860948,
+      "CD": 0.0010587783763185143,
+      "HYP": 0.0016148845897987485
+    },
+    "auroc_correct_vs_incorrect_c": 0.2782636254501801,
+    "auroc_correct_vs_incorrect_maxprob": 0.7508052821128451,
+    "spearman_c_maxprob": -0.61896023968632,
+    "uniform_reference_note": "c = 0 for a uniform map; c = 1 for a one-hot map",
+    "max_weight_times_T": {
+      "mean": 1.3301736864176663,
+      "median": 1.2825493812561035,
+      "p95": 1.6942472457885742,
+      "max": 2.347665786743164
+    }
+  }
+}

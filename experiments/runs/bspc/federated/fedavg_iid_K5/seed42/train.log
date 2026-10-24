@@ -1,0 +1,67 @@
+[2026-10-24 11:19:58,688][INFO] - Setting random seed: 42 (deterministic=True)
+[2026-10-24 11:19:58,690][INFO] - Deterministic algorithms enabled (warn_only=True)
+[2026-10-24 11:19:58,709][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-24 11:19:58,709][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-24 11:19:59,114][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-24 11:19:59,747][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-24 11:19:59,766][INFO] - Split 'train' created. Total samples: 12957
+[2026-10-24 11:19:59,766][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-24 11:19:59,766][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-24 11:19:59,766][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-24 11:20:00,161][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-24 11:20:00,794][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-24 11:20:00,801][INFO] - Split 'val' created. Total samples: 1637
+[2026-10-24 11:20:00,801][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-24 11:20:00,801][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-24 11:20:00,801][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-24 11:20:01,361][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-24 11:20:01,979][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-24 11:20:01,985][INFO] - Split 'test' created. Total samples: 1650
+[2026-10-24 11:20:01,986][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-24 11:20:02,002][INFO] - fedavg_iid_K5: client sizes [2579, 2624, 2562, 2600, 2592]; class counts per client [[1476, 412, 357, 239, 95], [1416, 432, 403, 292, 81], [1450, 374, 386, 266, 86], [1451, 399, 369, 297, 84], [1450, 426, 388, 259, 69]]
+[2026-10-24 11:21:18,337][INFO] - Round 01 | lr 0.000100 | client loss 0.1861 | val F1 0.1573 | val AUC 0.7157
+[2026-10-24 11:22:29,561][INFO] - Round 02 | lr 0.000280 | client loss 0.1437 | val F1 0.5201 | val AUC 0.8638
+[2026-10-24 11:23:41,116][INFO] - Round 03 | lr 0.000460 | client loss 0.1377 | val F1 0.5056 | val AUC 0.8716
+[2026-10-24 11:24:53,152][INFO] - Round 04 | lr 0.000640 | client loss 0.1373 | val F1 0.5041 | val AUC 0.8761
+[2026-10-24 11:26:04,735][INFO] - Round 05 | lr 0.000820 | client loss 0.1367 | val F1 0.4929 | val AUC 0.8831
+[2026-10-24 11:27:16,737][INFO] - Round 06 | lr 0.001000 | client loss 0.1374 | val F1 0.5146 | val AUC 0.8792
+[2026-10-24 11:28:31,661][INFO] - Round 07 | lr 0.000996 | client loss 0.1321 | val F1 0.5395 | val AUC 0.8849
+[2026-10-24 11:29:47,799][INFO] - Round 08 | lr 0.000984 | client loss 0.1279 | val F1 0.5588 | val AUC 0.8870
+[2026-10-24 11:31:04,386][INFO] - Round 09 | lr 0.000965 | client loss 0.1246 | val F1 0.5151 | val AUC 0.8876
+[2026-10-24 11:32:20,877][INFO] - Round 10 | lr 0.000938 | client loss 0.1219 | val F1 0.5484 | val AUC 0.8917
+[2026-10-24 11:33:38,213][INFO] - Round 11 | lr 0.000905 | client loss 0.1195 | val F1 0.5536 | val AUC 0.8959
+[2026-10-24 11:35:01,069][INFO] - Round 12 | lr 0.000865 | client loss 0.1169 | val F1 0.5872 | val AUC 0.8956
+[2026-10-24 11:36:21,330][INFO] - Round 13 | lr 0.000819 | client loss 0.1152 | val F1 0.5770 | val AUC 0.8949
+[2026-10-24 11:37:44,693][INFO] - Round 14 | lr 0.000768 | client loss 0.1136 | val F1 0.5703 | val AUC 0.8989
+[2026-10-24 11:39:08,558][INFO] - Round 15 | lr 0.000713 | client loss 0.1122 | val F1 0.5900 | val AUC 0.8963
+[2026-10-24 11:40:24,899][INFO] - Round 16 | lr 0.000655 | client loss 0.1095 | val F1 0.5810 | val AUC 0.8973
+[2026-10-24 11:41:47,215][INFO] - Round 17 | lr 0.000594 | client loss 0.1082 | val F1 0.5827 | val AUC 0.8973
+[2026-10-24 11:43:12,852][INFO] - Round 18 | lr 0.000532 | client loss 0.1066 | val F1 0.5737 | val AUC 0.8972
+[2026-10-24 11:44:35,732][INFO] - Round 19 | lr 0.000469 | client loss 0.1046 | val F1 0.5836 | val AUC 0.8945
+[2026-10-24 11:45:59,120][INFO] - Round 20 | lr 0.000407 | client loss 0.1038 | val F1 0.5810 | val AUC 0.9004
+[2026-10-24 11:47:22,480][INFO] - Round 21 | lr 0.000346 | client loss 0.1018 | val F1 0.5806 | val AUC 0.9006
+[2026-10-24 11:48:45,647][INFO] - Round 22 | lr 0.000288 | client loss 0.0994 | val F1 0.5954 | val AUC 0.8984
+[2026-10-24 11:50:07,762][INFO] - Round 23 | lr 0.000233 | client loss 0.0979 | val F1 0.5840 | val AUC 0.8988
+[2026-10-24 11:51:29,396][INFO] - Round 24 | lr 0.000182 | client loss 0.0962 | val F1 0.5962 | val AUC 0.8994
+[2026-10-24 11:52:51,134][INFO] - Round 25 | lr 0.000136 | client loss 0.0950 | val F1 0.5886 | val AUC 0.8987
+[2026-10-24 11:54:14,893][INFO] - Round 26 | lr 0.000096 | client loss 0.0945 | val F1 0.5944 | val AUC 0.8999
+[2026-10-24 11:55:39,057][INFO] - Round 27 | lr 0.000063 | client loss 0.0935 | val F1 0.5902 | val AUC 0.8990
+[2026-10-24 11:57:03,624][INFO] - Round 28 | lr 0.000036 | client loss 0.0932 | val F1 0.6015 | val AUC 0.8993
+[2026-10-24 11:58:27,631][INFO] - Round 29 | lr 0.000017 | client loss 0.0925 | val F1 0.6011 | val AUC 0.8993
+[2026-10-24 11:59:49,216][INFO] - Round 30 | lr 0.000005 | client loss 0.0924 | val F1 0.6013 | val AUC 0.8991
+[2026-10-24 11:59:52,286][INFO] - DONE fedavg_iid_K5: test macro-F1 0.6037 AUC 0.8954

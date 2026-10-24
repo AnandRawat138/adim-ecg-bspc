@@ -1,0 +1,232 @@
+{
+  "config": "tattn",
+  "seed": 42,
+  "switches": {
+    "use_transformer": true,
+    "use_bilstm": true,
+    "use_adim": false,
+    "pooling": "attention",
+    "refinement": "tattn"
+  },
+  "best_epoch": 26,
+  "best_val_macro_f1": 0.6445979056290255,
+  "train_time_s": 1357.5371763706207,
+  "n_train": 12957,
+  "n_val": 1637,
+  "n_test": 1650,
+  "val": {
+    "macro_f1": 0.6445979056290255,
+    "macro_auc": 0.8936035385233044,
+    "accuracy": 0.7477092241905925,
+    "macro_precision": 0.6354146543361364,
+    "macro_recall": 0.6587152138169958,
+    "per_class": {
+      "NORM": {
+        "precision": 0.8573113207547169,
+        "recall": 0.7954048140043763,
+        "f1": 0.8251986379114642,
+        "auc": 0.9001909742714377,
+        "support": 914
+      },
+      "MI": {
+        "precision": 0.6355555555555555,
+        "recall": 0.6137339055793991,
+        "f1": 0.6244541484716157,
+        "auc": 0.8857403127789395,
+        "support": 233
+      },
+      "STTC": {
+        "precision": 0.6485623003194888,
+        "recall": 0.796078431372549,
+        "f1": 0.7147887323943662,
+        "auc": 0.9278198689026985,
+        "support": 255
+      },
+      "CD": {
+        "precision": 0.6735751295336787,
+        "recall": 0.7602339181286549,
+        "f1": 0.7142857142857143,
+        "auc": 0.9389355608211069,
+        "support": 171
+      },
+      "HYP": {
+        "precision": 0.3620689655172414,
+        "recall": 0.328125,
+        "f1": 0.3442622950819672,
+        "auc": 0.8153309758423395,
+        "support": 64
+      }
+    },
+    "confusion_matrix": [
+      [
+        727,
+        47,
+        63,
+        47,
+        30
+      ],
+      [
+        45,
+        143,
+        31,
+        11,
+        3
+      ],
+      [
+        25,
+        18,
+        203,
+        5,
+        4
+      ],
+      [
+        21,
+        13,
+        7,
+        130,
+        0
+      ],
+      [
+        30,
+        4,
+        9,
+        0,
+        21
+      ]
+    ]
+  },
+  "test": {
+    "macro_f1": 0.6128899612258855,
+    "macro_auc": 0.8759685553452456,
+    "accuracy": 0.7424242424242424,
+    "macro_precision": 0.6032673136270098,
+    "macro_recall": 0.6263613903042731,
+    "per_class": {
+      "NORM": {
+        "precision": 0.8553092182030338,
+        "recall": 0.8037280701754386,
+        "f1": 0.8287167891464104,
+        "auc": 0.9028089787476823,
+        "support": 912
+      },
+      "MI": {
+        "precision": 0.6638655462184874,
+        "recall": 0.6171875,
+        "f1": 0.6396761133603239,
+        "auc": 0.8908071422166426,
+        "support": 256
+      },
+      "STTC": {
+        "precision": 0.6379310344827587,
+        "recall": 0.7644628099173554,
+        "f1": 0.6954887218045113,
+        "auc": 0.9125774793388429,
+        "support": 242
+      },
+      "CD": {
+        "precision": 0.69,
+        "recall": 0.75,
+        "f1": 0.71875,
+        "auc": 0.9068338869446586,
+        "support": 184
+      },
+      "HYP": {
+        "precision": 0.16923076923076924,
+        "recall": 0.19642857142857142,
+        "f1": 0.18181818181818182,
+        "auc": 0.7668152894784013,
+        "support": 56
+      }
+    },
+    "confusion_matrix": [
+      [
+        733,
+        43,
+        60,
+        42,
+        34
+      ],
+      [
+        46,
+        158,
+        31,
+        11,
+        10
+      ],
+      [
+        27,
+        21,
+        185,
+        5,
+        4
+      ],
+      [
+        21,
+        14,
+        5,
+        138,
+        6
+      ],
+      [
+        30,
+        2,
+        9,
+        4,
+        11
+      ]
+    ]
+  },
+  "complexity": {
+    "params": 1135494,
+    "flops_M": 2720.881792,
+    "latency_ms_bs1": 6.826662998646498,
+    "throughput_sps_bs128": 700.8548211348839
+  },
+  "loader": {
+    "train_workers": 4,
+    "deterministic_cudnn": false
+  },
+  "env": {
+    "python": "3.12.7",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+  },
+  "training_cfg": {
+    "optimizer": {
+      "name": "adamw",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "momentum": 0.9
+    },
+    "scheduler": {
+      "name": "cosine",
+      "warmup_epochs": 5,
+      "max_lr": 0.003,
+      "pct_start": 0.3,
+      "factor": 0.1,
+      "patience": 5
+    },
+    "loss": {
+      "name": "softmax_focal",
+      "label_smoothing": 0.1,
+      "focal_alpha": 0.25,
+      "focal_gamma": 2.0
+    },
+    "epochs": 50,
+    "batch_size": 128,
+    "grad_accumulation_steps": 1,
+    "grad_clip_norm": 1.0,
+    "early_stopping": {
+      "patience": 10,
+      "monitor": "val_f1",
+      "mode": "max"
+    },
+    "checkpoint": {
+      "save_dir": "E:\\AIDM\\ecg_classification\\checkpoints",
+      "monitor": "val_f1",
+      "mode": "max"
+    },
+    "output_dir": "E:\\AIDM\\ecg_classification\\experiments/runs"
+  }
+}

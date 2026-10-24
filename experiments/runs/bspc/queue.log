@@ -1,0 +1,36 @@
+2026-10-09 17:57:13 START adim seed42
+2026-10-09 19:15:53 LAUNCH (pid 158)
+2026-10-09 19:15:53 START adim seed42
+2026-10-09 19:36:54 LAUNCH queue2 (pid 239)
+2026-10-09 19:52:24 LAUNCH queue2 (pid 433)
+2026-10-09 19:58:51 LAUNCH queue2 (pid 524)
+2026-10-09 19:58:52 START adim2 seed42
+2026-10-09 20:15:04 END   adim2 seed42 rc=0
+2026-10-09 20:15:05 START adim2 seed43
+2026-10-09 20:51:59 PAUSED by user request (hard stop)
+2026-10-18 09:06:42 LAUNCH queue2 (pid 9708)
+2026-10-18 09:06:42 START adim2 seed42
+2026-10-18 09:06:54 END   adim2 seed42 rc=0
+2026-10-18 09:06:54 START adim2 seed43
+2026-10-18 09:06:59 END   adim2 seed43 rc=0
+2026-10-18 09:06:59 START adim2 seed44
+2026-10-18 09:24:34 END   adim2 seed44 rc=0
+2026-10-18 09:24:34 START it_tr_bl seed42
+2026-10-18 09:36:45 END   it_tr_bl seed42 rc=0
+2026-10-18 09:36:45 START it_tr_bl seed43
+2026-10-18 09:55:32 END   it_tr_bl seed43 rc=0
+2026-10-18 09:55:32 START it_tr_bl seed44
+2026-10-18 10:13:00 END   it_tr_bl seed44 rc=0
+2026-10-18 10:13:00 START tattn seed42
+2026-10-24 11:17:46 LAUNCH fast (pid 19771)
+2026-10-24 11:17:46 START faithfulness adim2 seed42
+2026-10-24 11:18:30 END   faithfulness adim2 seed42 rc=0
+2026-10-24 11:18:30 START faithfulness adim2 seed43
+2026-10-24 11:18:58 END   faithfulness adim2 seed43 rc=0
+2026-10-24 11:18:58 START faithfulness adim2 seed44
+2026-10-24 11:19:27 END   faithfulness adim2 seed44 rc=0
+2026-10-24 11:19:27 START faithfulness tattn seed42
+2026-10-24 11:19:53 END   faithfulness tattn seed42 rc=0
+2026-10-24 11:19:53 START federated iid
+2026-10-24 11:59:53 END   federated iid rc=0
+2026-10-24 11:59:53 FAST COMPLETE

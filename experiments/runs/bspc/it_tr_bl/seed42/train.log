@@ -1,0 +1,60 @@
+[2026-10-18 09:24:46,382][ecg_classification][INFO] - Config=it_tr_bl seed=42 switches={'use_transformer': True, 'use_bilstm': True, 'use_adim': False, 'pooling': 'attention'}
+[2026-10-18 09:24:46,382][utils.reproducibility][INFO] - Setting random seed: 42 (deterministic=False)
+[2026-10-18 09:24:46,455][data.loader][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-18 09:24:46,455][data.loader][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-18 09:24:46,867][data.loader][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-18 09:24:47,502][data.loader][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-18 09:24:47,518][data.dataset][INFO] - Split 'train' created. Total samples: 12957
+[2026-10-18 09:24:47,525][data.dataset][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-18 09:24:47,542][data.loader][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-18 09:24:47,543][data.loader][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-18 09:24:47,946][data.loader][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-18 09:24:48,564][data.loader][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-18 09:24:48,570][data.dataset][INFO] - Split 'val' created. Total samples: 1637
+[2026-10-18 09:24:48,571][data.dataset][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-18 09:24:48,572][data.loader][INFO] - PTB-XL raw dataset path successfully validated.
+[2026-10-18 09:24:48,572][data.loader][INFO] - Loading metadata from E:\AIDM\ecg_classification\data/ptbxl\ptbxl_database.csv
+[2026-10-18 09:24:49,050][data.loader][INFO] - Loading SCP mapping statements from E:\AIDM\ecg_classification\data/ptbxl\scp_statements.csv
+[2026-10-18 09:24:49,678][data.loader][INFO] - Class distribution after mapping: 
+NORM    9514
+MI      5469
+STTC    5235
+CD      4898
+HYP     2649
+[2026-10-18 09:24:49,684][data.dataset][INFO] - Split 'test' created. Total samples: 1650
+[2026-10-18 09:24:49,684][data.dataset][INFO] - Found valid preprocessed cache. Loading memmap files.
+[2026-10-18 09:24:55,341][evaluation.evaluator][INFO] - Hardware Profile - Params: 1,118,981 | Latency: 6.97 ms | Throughput: 750.8 samples/sec | FLOPs: 2,720,848,896
+[2026-10-18 09:24:57,016][training.trainer][INFO] - Beginning model training sequence.
+[2026-10-18 09:25:43,534][training.trainer][INFO] - Epoch 01 | Train Loss: 0.1535 | Val Loss: 0.1274 | Val F1: 0.5399 | LR: 0.000100
+[2026-10-18 09:26:13,645][training.trainer][INFO] - Epoch 02 | Train Loss: 0.1203 | Val Loss: 0.1261 | Val F1: 0.5508 | LR: 0.000280
+[2026-10-18 09:26:45,825][training.trainer][INFO] - Epoch 03 | Train Loss: 0.1154 | Val Loss: 0.1346 | Val F1: 0.5214 | LR: 0.000460
+[2026-10-18 09:27:19,632][training.trainer][INFO] - Epoch 04 | Train Loss: 0.1148 | Val Loss: 0.1474 | Val F1: 0.4764 | LR: 0.000640
+[2026-10-18 09:27:53,095][training.trainer][INFO] - Epoch 05 | Train Loss: 0.1110 | Val Loss: 0.1250 | Val F1: 0.5551 | LR: 0.000820
+[2026-10-18 09:28:26,816][training.trainer][INFO] - Epoch 06 | Train Loss: 0.1113 | Val Loss: 0.1227 | Val F1: 0.5631 | LR: 0.001000
+[2026-10-18 09:29:01,778][training.trainer][INFO] - Epoch 07 | Train Loss: 0.1067 | Val Loss: 0.1162 | Val F1: 0.5996 | LR: 0.000999
+[2026-10-18 09:29:36,184][training.trainer][INFO] - Epoch 08 | Train Loss: 0.1045 | Val Loss: 0.1326 | Val F1: 0.5605 | LR: 0.000995
+[2026-10-18 09:30:10,962][training.trainer][INFO] - Epoch 09 | Train Loss: 0.1033 | Val Loss: 0.1202 | Val F1: 0.5584 | LR: 0.000989
+[2026-10-18 09:30:46,183][training.trainer][INFO] - Epoch 10 | Train Loss: 0.1022 | Val Loss: 0.1176 | Val F1: 0.6297 | LR: 0.000981
+[2026-10-18 09:31:20,601][training.trainer][INFO] - Epoch 11 | Train Loss: 0.0995 | Val Loss: 0.1216 | Val F1: 0.6240 | LR: 0.000970
+[2026-10-18 09:31:56,004][training.trainer][INFO] - Epoch 12 | Train Loss: 0.0985 | Val Loss: 0.1207 | Val F1: 0.5648 | LR: 0.000957
+[2026-10-18 09:32:30,395][training.trainer][INFO] - Epoch 13 | Train Loss: 0.0968 | Val Loss: 0.1198 | Val F1: 0.5724 | LR: 0.000942
+[2026-10-18 09:33:05,946][training.trainer][INFO] - Epoch 14 | Train Loss: 0.0957 | Val Loss: 0.1217 | Val F1: 0.5757 | LR: 0.000924
+[2026-10-18 09:33:41,015][training.trainer][INFO] - Epoch 15 | Train Loss: 0.0944 | Val Loss: 0.1227 | Val F1: 0.5858 | LR: 0.000905
+[2026-10-18 09:34:16,421][training.trainer][INFO] - Epoch 16 | Train Loss: 0.0935 | Val Loss: 0.1204 | Val F1: 0.5883 | LR: 0.000883
+[2026-10-18 09:34:54,012][training.trainer][INFO] - Epoch 17 | Train Loss: 0.0928 | Val Loss: 0.1196 | Val F1: 0.5965 | LR: 0.000860
+[2026-10-18 09:35:30,026][training.trainer][INFO] - Epoch 18 | Train Loss: 0.0898 | Val Loss: 0.1264 | Val F1: 0.5783 | LR: 0.000835
+[2026-10-18 09:36:05,243][training.trainer][INFO] - Epoch 19 | Train Loss: 0.0897 | Val Loss: 0.1216 | Val F1: 0.5902 | LR: 0.000808
+[2026-10-18 09:36:40,449][training.trainer][INFO] - Epoch 20 | Train Loss: 0.0871 | Val Loss: 0.1243 | Val F1: 0.6056 | LR: 0.000780
+[2026-10-18 09:36:40,488][training.trainer][INFO] - Early stopping triggered after 20 epochs of training.
+[2026-10-18 09:36:40,489][training.trainer][INFO] - Training process completed.
+[2026-10-18 09:36:43,476][ecg_classification][INFO] - DONE it_tr_bl seed42: test macro-F1=0.6353 macro-AUC=0.8990 (best epoch 10)
