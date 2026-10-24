@@ -1,0 +1,48 @@
+# Augmentation strategies configuration
+gaussian_noise:
+  enabled: true
+  std: 0.01
+
+amplitude_scaling:
+  enabled: true
+  min_scale: 0.9
+  max_scale: 1.1
+
+random_time_shift:
+  enabled: true
+  max_shift: 50             # samples
+
+baseline_wander:
+  enabled: true
+  frequency: 0.5            # Hz
+  amplitude: 0.05
+
+random_cropping:
+  enabled: false
+  crop_length: 900
+
+lead_dropout:
+  enabled: true
+  drop_prob: 0.15
+
+time_masking:
+  enabled: true
+  mask_prob: 0.1
+  max_mask_length: 50
+
+frequency_masking:
+  enabled: true
+  mask_prob: 0.1
+  max_mask_length: 5
+
+lead_permutation:
+  enabled: true
+  permute_prob: 0.2
+
+time_warping:
+  enabled: true
+  warp_factor: 0.05
+
+magnitude_warping:
+  enabled: true
+  warp_factor: 0.05

@@ -1,0 +1,12 @@
+# XResNet1D Configuration (Bag of Tricks modifications)
+name: "xresnet1d"
+input_channels: 12
+num_classes: 5
+
+# Block structures
+blocks: [3, 4, 6, 3]         # Standard xresnet50 structure
+filters: [32, 64, 128, 256, 512, 1024]
+kernel_size: 5
+stride: 2
+dropout: 0.15
+pooling: "avg"

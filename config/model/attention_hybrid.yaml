@@ -1,0 +1,14 @@
+# Attention-based Hybrid Network Configuration
+name: "attention_hybrid"
+input_channels: 12
+num_classes: 5
+
+# CNN multi-scale parameters
+filters: [64, 128, 256]
+kernel_sizes: [3, 5, 7]
+dropout: 0.2
+
+# Hierarchical attention mapping parameters
+attention_dim: 128
+num_heads: 8
+pooling: "attention"

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+venv*/
+data/ptbxl/
+data/cache/
+data/cache_test/
+checkpoints/
+experiments/runs/*
+!experiments/runs/bspc/
+experiments/runs/bspc/**/last_model.pt

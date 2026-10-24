@@ -1,0 +1,12 @@
+# Hydra main configuration file
+defaults:
+  - env: default
+  - dataset: default
+  - training: default
+  - augmentation: default
+  - model: cnn
+  - _self_
+
+# Allow manual override parameters in experiments
+experiment_name: "default_run"
+experiment_id: ???

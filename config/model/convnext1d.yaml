@@ -1,0 +1,11 @@
+# ConvNeXt1D Configuration
+name: "convnext1d"
+input_channels: 12
+num_classes: 5
+
+# Block composition details
+depths: [3, 3, 9, 3]
+dims: [96, 192, 384, 768]
+drop_path_rate: 0.1
+kernel_size: 7
+pooling: "avg"

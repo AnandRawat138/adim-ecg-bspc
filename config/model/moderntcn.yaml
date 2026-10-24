@@ -1,0 +1,12 @@
+# ModernTCN Configuration
+name: "moderntcn"
+input_channels: 12
+num_classes: 5
+
+# Modern block structures
+depths: [2, 2, 2, 2]
+dims: [64, 128, 256, 512]
+kernel_size: 17
+expansion_factor: 4
+dropout: 0.1
+pooling: "avg"

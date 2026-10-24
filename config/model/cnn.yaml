@@ -1,0 +1,18 @@
+# CNN Model Configuration
+name: "cnn"
+input_channels: 12
+num_classes: 5
+
+# Block composition flags
+residual_connections: true
+depthwise_separable: false
+squeeze_excitation: true
+cbam: false
+
+# Architecture parameters
+filters: [64, 128, 256, 512]
+kernel_size: 5
+stride: 2
+dropout: 0.2
+fc_dim: 128
+pooling: "attention"       # "max", "avg", or "attention"

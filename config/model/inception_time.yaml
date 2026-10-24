@@ -1,0 +1,13 @@
+# InceptionTime Configuration
+name: "inception_time"
+input_channels: 12
+num_classes: 5
+
+# Modular Inception structures
+num_blocks: 6
+filters: 32
+use_residual: true
+kernel_sizes: [9, 19, 39]
+bottleneck_channels: 32
+dropout: 0.2
+pooling: "avg"

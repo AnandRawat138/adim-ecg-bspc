@@ -1,0 +1,10 @@
+# Dataset configurations
+raw_dir: "${hydra:runtime.cwd}/data/ptbxl"
+cache_dir: "${hydra:runtime.cwd}/data/cache"
+version: "1.0.0"
+sampling_rate: 100         # 100 or 500 Hz
+use_caching: true          # Use NumPy memmap caching
+classes: ["NORM", "MI", "STTC", "CD", "HYP"] # Target classes (diagnostic superclasses)
+num_leads: 12
+signal_length: 1000        # samples (e.g. 10s at 100Hz = 1000)
+cv_folds: null             # set to integer value to enable k-fold cross validation

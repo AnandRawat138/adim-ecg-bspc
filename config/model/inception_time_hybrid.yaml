@@ -1,0 +1,34 @@
+# InceptionTime Hybrid Model Configuration
+name: "inception_time_hybrid"
+input_channels: 12
+num_classes: 5
+
+# Backbone settings
+num_blocks: 6
+filters: 32
+kernel_sizes: [9, 19, 39]
+bottleneck_channels: 32
+use_residual: true
+dropout: 0.2
+pooling: "attention"       # "attention", "avg", or "max"
+
+# Dynamic blocks toggles (ablation switches)
+use_transformer: false
+use_bilstm: false
+use_adim: false
+
+# Transformer parameters
+transformer_heads: 4
+transformer_layers: 2
+transformer_ff_dim: 512
+transformer_dropout: 0.1
+
+# BiLSTM parameters
+lstm_hidden_dim: 128
+lstm_layers: 1
+lstm_dropout: 0.2
+
+# ADIM parameters
+adim_reduction_ratio: 8
+adim_attention_dim: 64
+adim_dropout: 0.1

@@ -1,0 +1,16 @@
+# CNN + BiLSTM Configuration
+name: "cnn_bilstm"
+input_channels: 12
+num_classes: 5
+
+# CNN parameters
+filters: [64, 128, 256]
+kernel_size: 5
+stride: 2
+dropout: 0.1
+
+# RNN parameters
+hidden_dim: 128
+num_layers: 2
+lstm_dropout: 0.2
+pooling: "attention"       # "attention" or "last"

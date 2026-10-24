@@ -1,0 +1,7 @@
+# Environment & Device Configurations
+seed: 42
+device: "auto"              # "cuda", "cpu", or "auto"
+mixed_precision: true       # Use Automatic Mixed Precision (AMP)
+compile: false              # Use PyTorch 2.0 compiler
+log_level: "INFO"           # Logging detail
+deterministic: true         # Enable deterministic algorithm constraints

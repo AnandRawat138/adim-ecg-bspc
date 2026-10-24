@@ -1,0 +1,12 @@
+# ResNet1D Configuration
+name: "resnet1d"
+input_channels: 12
+num_classes: 5
+
+# Block settings
+blocks: [2, 2, 2, 2]         # Layers composition
+filters: [64, 128, 256, 512]
+kernel_size: 7
+stride: 2
+dropout: 0.1
+pooling: "avg"
